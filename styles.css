@@ -30,3 +30,24 @@ body {
 .navigation .active {
   background-color: #545454;
 }
+.copyright {
+  text-align: center;
+}
+.banner {
+  background-color: lightblue;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-image: url("images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.banner h1 {
+  color: #ffffff;
+}
+.banner a {
+  background-color: #0000007c;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px;
+}
