@@ -1,0 +1,32 @@
+html,body {
+  min-height: 100vh;
+}
+body {
+  background-color:bisque;
+  font-family: arial, helvetica, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.main-header {
+  background-color: #4d6b51;
+}
+.logo {
+  width: 100px;
+  margin: auto;
+  display: block;
+}
+.navigation {
+  background-color: #000000;
+  text-align: center;
+}
+.navigation a {
+  color: #dbfce0;
+  text-decoration: none;
+  font-size:18px;
+  padding: 12px;
+  display: inline-block;
+}
+.navigation .active {
+  background-color: #545454;
+}
