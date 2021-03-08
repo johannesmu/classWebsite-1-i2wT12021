@@ -6,7 +6,7 @@ body {
   font-family: arial, helvetica, sans-serif;
   margin: 0;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
 }
 .main-header {
   background-color: #4d6b51;
@@ -37,17 +37,48 @@ body {
   background-color: lightblue;
   text-align: center;
   display: grid;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: auto auto;
   background-image: url("images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  min-height: 60vh;
 }
 .banner h1 {
   color: #ffffff;
+  font-size: 42px;
+  text-shadow: 0px 0px 2px black;
+  /* background-color:rgba(0, 0, 0, 0.377); */
+  padding: 15px;
+  margin: 0;
+  grid-row-start: 1;
+  align-self: end;
 }
 .banner a {
+  grid-row-start: 2;
+  align-self: center;
   background-color: #0000007c;
   color: #ffffff;
   text-decoration: none;
   padding: 16px;
+  border-radius: 10px;
+}
+.banner a:hover {
+  background-color: #000000;
+}
+.content {
+  margin-left: 2em;
+  margin-right: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+
+}
+
+.card-image {
+  max-width: 100%;
 }
