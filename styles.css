@@ -30,6 +30,16 @@ body {
 .navigation .active {
   background-color: #545454;
 }
+.nav-button {
+  width: 52px;
+  height: 52px;
+  background-image: url('images/bars-solid.png');
+  background-color: transparent;
+  background-size: contain;
+  border-color: transparent;
+  display: none;
+}
+
 .copyright {
   text-align: center;
 }

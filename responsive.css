@@ -2,6 +2,21 @@
   .content {
     grid-template-columns: 1fr 1fr;
   }
+  .nav-button {
+    display: block;
+    grid-column-start: 2;
+  }
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo {
+    grid-column-start: 1;
+  }
+  .navigation {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 @media screen and (max-width:480px) {
