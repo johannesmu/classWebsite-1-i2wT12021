@@ -5,6 +5,7 @@
   .nav-button {
     display: block;
     grid-column-start: 2;
+    justify-self: end;
   }
   .main-header {
     display: grid;
@@ -12,6 +13,8 @@
   }
   .logo {
     grid-column-start: 1;
+    margin: 0;
+    justify-self: start;
   }
   .navigation {
     grid-column-start: 1;
@@ -26,6 +29,11 @@
   }
   .navigation {
     text-align: left;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .navigation.open {
+    max-height: 50vh;
   }
   .navigation a {
     width:100%;
