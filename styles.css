@@ -92,3 +92,32 @@ body {
 .card-image {
   max-width: 100%;
 }
+
+#contact {
+  grid-column-start: 2;
+}
+label {
+  display: block;
+  margin-top: 1em;
+}
+.input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#rating {
+  display: block;
+  width: 100%;
+}
+.rating-labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rating-labels label {
+  margin-top: 0;
+}
+.choose-fruit label {
+  display: inline-block;
+}

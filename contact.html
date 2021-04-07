@@ -23,16 +23,18 @@
     <main class="content">
       <form id="contact">
         <label for="username">Name</label>
-        <input class="input" id="username" type="text" name="name" placeholder="your name">
+        <input class="input" id="username" type="text" name="name" placeholder="your name" required>
         <label for="useremail">Email Address</label>
-        <input class="input" id="useremail" type="email" name="email" placeholder="you@example.com">
+        <input class="input" id="useremail" type="email" name="email" placeholder="you@example.com" required>
         <!-- radio buttons -->
-        <fieldset>
+        <fieldset class="choose-fruit">
           <legend>Choose a fruit</legend>
           <input type="radio" name="fruits" value="pineapple" id="choice1" checked>
           <label for="choice1">Pineapple</label>
+          <br>
           <input type="radio" name="fruits" value="watermelon" id="choice2">
           <label for="choice2">Watermelon</label>
+          <br>
           <input type="radio" name="fruits" value="apple" id="choice3">
           <label for="choice3">Apple</label>
         </fieldset>
@@ -45,13 +47,21 @@
         </select>
         <!-- checkbox -->
         <label for="spam">I want spam</label>
-        <input id="spam" type="checkbox" name="spam">
+        <input id="spam" type="checkbox" name="spam" checked>
         <!-- date input -->
         <label for="date">Choose a date</label>
         <input id="date" type="date" name="date">
         <!-- range -->
         <label for="rating">How would you rate our service?</label>
         <input id="rating" type="range" min="1" max="5" step="1" name="rating">
+        <div class="rating-labels">
+          <label>1</label>
+          <label>2</label>
+          <label>3</label>
+          <label>4</label>
+          <label>5</label>
+        </div>
+        <br>
         <button type="reset" class="button">Reset</button>
         <button type="submit" class="button">Submit</button>
       </form>
