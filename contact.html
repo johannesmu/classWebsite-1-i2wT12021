@@ -22,9 +22,29 @@
     <main class="content">
       <form id="contact">
         <label for="username">Name</label>
-        <input id="username" type="text" name="name" placeholder="your name">
+        <input class="input" id="username" type="text" name="name" placeholder="your name" required>
         <label for="useremail">Email Address</label>
-        <input id="useremail" type="email" name="email" placeholder="you@example.com">
+        <input class="input" id="useremail" type="email" name="email" placeholder="you@example.com" required>
+        <fieldset class="group-row">
+          <legend>Do you like spam?</legend>
+          <input type="radio" id="choice1" value="yes" name="user-choice">
+          <label for="choice1">Yes</label>
+          <input type="radio" id="choice2" value="no" name="user-choice">
+          <label for="choice2">No</label>
+          <input type="radio" id="choice3" value="sometimes" name="user-choice">
+          <label for="choice3">sometimes</label>
+        </fieldset>
+        <label for="reply">I want a reply</label>
+        <input type="checkbox" id="reply" name="reply" value="true">
+        <label for="topic">Message Topic</label>
+        <select id="topic" class="input" name="topic">
+          <option value="personal">Personal</option>
+          <option value="business">Business</option>
+          <option value="personal">Just Trolling</option>
+        </select>
+        <label for="terminator">How much do you like the movie Terminator?</label>
+        <input class="input" type="range" step="1" min="0" max="10" id="terminator" name="movie" list="tickmarks">
+        <output for="movie" id="amout">0</output>
       </form>
     </main>
     <footer class="footer">

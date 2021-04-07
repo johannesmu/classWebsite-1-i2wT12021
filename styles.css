@@ -39,6 +39,9 @@ body {
   border-color: transparent;
   display: none;
 }
+.nav-button:focus {
+  outline: none;
+}
 
 .copyright {
   text-align: center;
