@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello there</title>
+    <title>Contact Us</title>
     <link rel="icon" href="images/img_264720.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <meta charset="UTF-8">
     <meta name="author" content="johannes">
-    <meta name="keywords" content="html, css, coding">
+    <meta name="keywords" content="contact information">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="main-header">
       <img class="logo" src="images/WordPress-Logo-Free-PNG-Image-180x180.png">
+      <button class="nav-button"></button>
       <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -22,13 +23,42 @@
     <main class="content">
       <form id="contact">
         <label for="username">Name</label>
-        <input id="username" type="text" name="name" placeholder="your name">
+        <input class="input" id="username" type="text" name="name" placeholder="your name">
         <label for="useremail">Email Address</label>
-        <input id="useremail" type="email" name="email" placeholder="you@example.com">
+        <input class="input" id="useremail" type="email" name="email" placeholder="you@example.com">
+        <!-- radio buttons -->
+        <fieldset>
+          <legend>Choose a fruit</legend>
+          <input type="radio" name="fruits" value="pineapple" id="choice1" checked>
+          <label for="choice1">Pineapple</label>
+          <input type="radio" name="fruits" value="watermelon" id="choice2">
+          <label for="choice2">Watermelon</label>
+          <input type="radio" name="fruits" value="apple" id="choice3">
+          <label for="choice3">Apple</label>
+        </fieldset>
+        <!-- select -->
+        <label for="subject">Select your message subject</label>
+        <select class="input" id="subject">
+          <option value="business">Business</option>
+          <option value="personal" selected>Personal</option>
+          <option value="just saying hi">Just saying hi</option>
+        </select>
+        <!-- checkbox -->
+        <label for="spam">I want spam</label>
+        <input id="spam" type="checkbox" name="spam">
+        <!-- date input -->
+        <label for="date">Choose a date</label>
+        <input id="date" type="date" name="date">
+        <!-- range -->
+        <label for="rating">How would you rate our service?</label>
+        <input id="rating" type="range" min="1" max="5" step="1" name="rating">
+        <button type="reset" class="button">Reset</button>
+        <button type="submit" class="button">Submit</button>
       </form>
     </main>
     <footer class="footer">
       <p class="copyright">&copy; Johannes 2021</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

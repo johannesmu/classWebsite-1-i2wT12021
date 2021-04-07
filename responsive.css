@@ -15,13 +15,24 @@
     grid-column-start: 1;
     margin: 0;
     justify-self: start;
+    width: 60px;
   }
   .navigation {
     grid-column-start: 1;
     grid-column-end: 3;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .navigation.open {
+    max-height: 50vh;
+  }
+  .navigation a {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
-
+/* mobile phone size */
 @media screen and (max-width:480px) {
   .content {
     grid-template-columns: 1fr;
