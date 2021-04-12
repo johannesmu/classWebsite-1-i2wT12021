@@ -160,3 +160,7 @@ label {
   object-fit: cover;
   object-position: center;
 }
+.slide {
+  min-width: 100%;
+  min-height: 50vh;
+}
