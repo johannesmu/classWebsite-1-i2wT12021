@@ -9,6 +9,7 @@
     <meta name="author" content="johannes">
     <meta name="keywords" content="contact information">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   </head>
   <body>
     <header class="main-header">
@@ -21,7 +22,7 @@
       </nav>
     </header>
     <main class="content">
-      <form id="contact">
+      <form id="contact" action="https://localhost/form-submit" method="POST">
         <label for="username">Name</label>
         <input class="input" id="username" type="text" name="name" placeholder="your name" required>
         <label for="useremail">Email Address</label>
@@ -61,6 +62,9 @@
           <label>4</label>
           <label>5</label>
         </div>
+        <!-- message area -->
+        <label for="message">Your Message</label>
+        <textarea class="input" id="message" name="usermessage" rows="5" cols="25" placeholder="Hi, you're awesome"></textarea>
         <br>
         <button type="reset" class="button">Reset</button>
         <button type="submit" class="button">Submit</button>
