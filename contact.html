@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Contact Us</title>
-    <link rel="icon" href="images/img_264720.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <meta charset="UTF-8">
-    <meta name="author" content="johannes">
-    <meta name="keywords" content="contact information">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-  </head>
-  <body>
-    <header class="main-header">
-      <img class="logo" src="images/WordPress-Logo-Free-PNG-Image-180x180.png">
-      <button class="nav-button"></button>
-      <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="active" href="contact.html">Contact</a>
-      </nav>
-    </header>
-    <main class="content">
-      <form id="contact" action="https://localhost/form-submit" method="POST">
-        <label for="username">Name</label>
-        <input class="input" id="username" type="text" name="name" placeholder="your name" required>
-        <label for="useremail">Email Address</label>
-        <input class="input" id="useremail" type="email" name="email" placeholder="you@example.com" required>
-        <!-- radio buttons -->
-        <fieldset class="choose-fruit">
-          <legend>Choose a fruit</legend>
-          <input type="radio" name="fruits" value="pineapple" id="choice1" checked>
-          <label for="choice1">Pineapple</label>
-          <br>
-          <input type="radio" name="fruits" value="watermelon" id="choice2">
-          <label for="choice2">Watermelon</label>
-          <br>
-          <input type="radio" name="fruits" value="apple" id="choice3">
-          <label for="choice3">Apple</label>
-        </fieldset>
-        <!-- select -->
-        <label for="subject">Select your message subject</label>
-        <select class="input" id="subject">
-          <option value="business">Business</option>
-          <option value="personal" selected>Personal</option>
-          <option value="just saying hi">Just saying hi</option>
-        </select>
-        <!-- checkbox -->
-        <label for="spam">I want spam</label>
-        <input id="spam" type="checkbox" name="spam" checked>
-        <!-- date input -->
-        <label for="date">Choose a date</label>
-        <input id="date" type="date" name="date">
-        <!-- range -->
-        <label for="rating">How would you rate our service?</label>
-        <input id="rating" type="range" min="1" max="5" step="1" name="rating">
-        <div class="rating-labels">
-          <label>1</label>
-          <label>2</label>
-          <label>3</label>
-          <label>4</label>
-          <label>5</label>
-        </div>
-        <!-- message area -->
-        <label for="message">Your Message</label>
-        <textarea class="input" id="message" name="usermessage" rows="5" cols="25" placeholder="Hi, you're awesome"></textarea>
+
+<head>
+  <title>Contact Us</title>
+  <link rel="icon" href="images/img_264720.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <meta charset="UTF-8">
+  <meta name="author" content="johannes">
+  <meta name="keywords" content="contact information">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@300;400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header">
+    <img class="logo" src="images/WordPress-Logo-Free-PNG-Image-180x180.png">
+    <button class="nav-button"></button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="content">
+    <form id="contact" action="https://localhost/form-submit" method="POST">
+      <label for="username">Name</label>
+      <input class="input" id="username" type="text" name="name" placeholder="your name" required>
+      <label for="useremail">Email Address</label>
+      <input class="input" id="useremail" type="email" name="email" placeholder="you@example.com" required>
+      <!-- radio buttons -->
+      <fieldset class="choose-fruit">
+        <legend>Choose a fruit</legend>
+        <input type="radio" name="fruits" value="pineapple" id="choice1" checked>
+        <label for="choice1">Pineapple</label>
         <br>
-        <button type="reset" class="button">Reset</button>
-        <button type="submit" class="button">Submit</button>
-      </form>
-    </main>
-    <footer class="footer">
-      <p class="copyright">&copy; Johannes 2021</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        <input type="radio" name="fruits" value="watermelon" id="choice2">
+        <label for="choice2">Watermelon</label>
+        <br>
+        <input type="radio" name="fruits" value="apple" id="choice3">
+        <label for="choice3">Apple</label>
+      </fieldset>
+      <!-- select -->
+      <label for="subject">Select your message subject</label>
+      <select class="input" id="subject">
+        <option value="business">Business</option>
+        <option value="personal" selected>Personal</option>
+        <option value="just saying hi">Just saying hi</option>
+      </select>
+      <!-- checkbox -->
+      <label for="spam">I want spam</label>
+      <input id="spam" type="checkbox" name="spam" checked>
+      <!-- date input -->
+      <label for="date">Choose a date</label>
+      <input id="date" type="date" name="date">
+      <!-- range -->
+      <label for="rating">How would you rate our service?</label>
+      <input id="rating" type="range" min="1" max="5" step="1" name="rating">
+      <div class="rating-labels">
+        <label>1</label>
+        <label>2</label>
+        <label>3</label>
+        <label>4</label>
+        <label>5</label>
+      </div>
+      <!-- message area -->
+      <label for="message">Your Message</label>
+      <textarea class="input" id="message" name="usermessage" rows="5" cols="25"
+        placeholder="Hi, you're awesome"></textarea>
+      <br>
+      <button type="reset" class="button">Reset</button>
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </main>
+  <footer class="footer">
+    <nav class="social">
+      <a href="https://facebook.com/page">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="https://instagram.com/page">
+        <i class="fab fa-instagram-square"></i>
+      </a>
+      <a href="https://twitter.com/profile">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+      <a href="https://linkedin.com/profile">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </nav>
+    <p class="copyright">&copy; Johannes 2021</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hello there</title>
-    <link rel="icon" href="images/img_264720.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <meta charset="UTF-8">
-    <meta name="author" content="johannes">
-    <meta name="keywords" content="html, css, coding">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-  </head>
-  <body>
-    <header class="main-header">
-      <img class="logo" src="images/WordPress-Logo-Free-PNG-Image-180x180.png">
-      <button class="nav-button"></button>
-      <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a class="active" href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-    <main class="content"></main>
-    <footer class="footer">
-      <p class="copyright">&copy; Johannes 2021</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <title>Hello there</title>
+  <link rel="icon" href="images/img_264720.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <meta charset="UTF-8">
+  <meta name="author" content="johannes">
+  <meta name="keywords" content="html, css, coding">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+  <header class="main-header">
+    <img class="logo" src="images/WordPress-Logo-Free-PNG-Image-180x180.png">
+    <button class="nav-button"></button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <div class="slideshow" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround" : true }'>
+    <div class="slide">
+      <img class="slide-image" src="images/boxed-water-is-better-M8CClPDw02I-unsplash.jpg">
+    </div>
+    <div class="slide">
+      <img class="slide-image" src="images/ethan-robertson-SYx3UCHZJlo-unsplash.jpg">
+    </div>
+    <div class="slide">
+      <img class="slide-image" src="images/luke-dean-weymark-o_rKNRoNz8s-unsplash.jpg">
+    </div>
+  </div>
+  <main class="content"></main>
+  <footer class="footer">
+    <nav class="social">
+      <a href="https://facebook.com/page">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="https://instagram.com/page">
+        <i class="fab fa-instagram-square"></i>
+      </a>
+      <a href="https://twitter.com/profile">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+      <a href="https://linkedin.com/profile">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </nav>
+    <p class="copyright">&copy; Johannes 2021</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
