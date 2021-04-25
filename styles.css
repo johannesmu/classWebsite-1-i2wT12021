@@ -12,6 +12,10 @@ body {
   background-color: #4d6b51;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  /* make header stick to top of page */
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 .logo {
   width: 100px;

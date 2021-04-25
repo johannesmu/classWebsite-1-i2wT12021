@@ -23,6 +23,7 @@
     text-align: left;
     max-height: 0;
     overflow: hidden;
+    flex-direction: column;
   }
   .navigation.open {
     max-height: 50vh;
