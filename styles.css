@@ -56,7 +56,7 @@ body {
   align-items: start;
   overflow: hidden;
   max-height: 0;
-  z-index: 9999;
+  z-index: 99999;
 }
 .submenu a {
   white-space: nowrap;
@@ -196,6 +196,10 @@ label {
   min-height: 70vh;
   min-width: 100%;
   position: relative;
+  z-index: 1;
+}
+.slideshow {
+  z-index: 1;
 }
 .slide-image {
   height: 70vh;
