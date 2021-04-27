@@ -16,6 +16,7 @@ body {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 .logo {
   width: 100px;
